@@ -1,0 +1,131 @@
+:root{
+    --fondo-celeste:#EAF2FD;
+    --fuente-productos: #464646;
+    --borde-texto: #c8c8c8;
+    --fuente-productos-azul: #2A7AE4;
+}
+
+.nosotros{
+    background-color: var(--fondo-celeste);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 3rem;
+    
+    padding-bottom: 1rem;
+}
+
+.logo_info{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+ .info, .hable_con_nosotros{
+    display: flex;
+    flex-direction: column;
+}
+
+.info a{
+    color: var(--fuente-productos);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    margin-left:8rem;
+    text-decoration: none;
+}
+
+.hable_con_nosotros{
+width: 50%;
+}
+
+.hable_con_nosotros span{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.hable_con_nosotros .nombre{
+    width: 99%;
+    height: 56px;
+    margin-bottom: 18px;
+    border:none;
+    border-bottom:solid 1px var(--borde-texto) ;
+    border-radius: 4px;
+    outline: none;
+}
+
+.hable_con_nosotros .mensaje{
+    width: 99%;
+    height: 82px;
+    margin-bottom: 8px;
+    border:none;
+    border-bottom:solid 1px var(--borde-texto) ;
+    resize: none;
+    outline:none;
+    border-radius: 4px;
+}
+
+.hable_con_nosotros button{
+    width: 144px;
+    height: 51px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: var(--fuente-productos-azul);
+    border: none;
+
+}
+
+.pie_de_pagina{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+}
+
+@media screen and (max-width: 1024px) {
+    .logo_info{
+        flex-direction: column;
+    }
+
+    .info a{
+        margin-left:0;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    .nosotros{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        vertical-align: center;
+   
+    }
+
+    .logo_info, .logo, .info a, .hable_con_nosotros,.hable_con_nosotros span, .nombre, .mensaje, .enviar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        
+    }
+    
+    .hable_con_nosotros{
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    /* .info, .hable_con_nosotros{
+        display: block;
+        
+    }*/
+
+   
+}
